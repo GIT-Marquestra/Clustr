@@ -19,7 +19,7 @@ export default async function Home() {
        <div className="space-y-6">
 
        {posts.map((post) => (
-          <PostCard key={post.id} post={post} dbUserId={dbUserId}/> // passing these as props
+          <PostCard key={post.id} post={post} dbUserId={dbUserId?dbUserId:''}/> // passing these as props
         ))}
 
        </div>
